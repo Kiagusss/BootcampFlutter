@@ -53,18 +53,18 @@ String? nama2 = nama2 = null ?? "Bukan Kiagus"; //Jika data kosong, akan memberi
 4. import 'dart:io';
 
 void main() {
-  // Minta pengguna untuk memasukkan nama depan
+ 
   stdout.write('Masukkan nama depan: ');
   String firstName = stdin.readLineSync() ?? '';
 
-  // Minta pengguna untuk memasukkan nama belakang
+
   stdout.write('Masukkan nama belakang: ');
   String lastName = stdin.readLineSync() ?? '';
 
-  // Gabungkan nama depan dan nama belakang
+ 
   String fullName = '$firstName $lastName';
 
-  // Cetak nama lengkap
+  
   print('Nama lengkap anda adalah: $fullName');
 }
 
