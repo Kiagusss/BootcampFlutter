@@ -21,9 +21,7 @@ void main() {
     'phone number': '08123456789'
   };
 // 5.
-  print("Data Diri:");
-  print("Nama: ${dataDiri['nama']}");
-  print("Alamat: ${dataDiri['alamat']}");
-  print("Email: ${dataDiri['email']}");
-  print("Phone Number: ${dataDiri['phone number']}");
+  dataDiri.forEach((key, value) {
+    print("$key: $value");
+  });
 }
