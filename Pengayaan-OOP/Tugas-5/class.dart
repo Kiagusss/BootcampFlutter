@@ -2,7 +2,7 @@ void main() {
   // Soal 1.
   print("");
   print("===== Soal 1 =====");
-  print("");
+    print("");
   Siswa siswa1 = Siswa("asep", 20, 30013);
   Siswa siswa2 = Siswa("Udin", 80, 30014);
   siswa1.tampilkanInformasi();
