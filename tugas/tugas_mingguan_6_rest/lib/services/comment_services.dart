@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:pengayaan_7_rest/model/comment_mode.dart';
+import 'package:pengayaan_7_rest/model/comment_model.dart';
 
 
 class CommentServices {

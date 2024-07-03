@@ -2,7 +2,7 @@ import 'package:easy_scaffold/easy_scaffold.dart';
 import 'package:flutter/material.dart';
 import 'package:pengayaan_7_rest/pages/detailchat.dart';
 
-import '../model/comment_mode.dart';
+import '../model/comment_model.dart';
 import '../services/comment_services.dart';
 
 Future<List<Comment>> commentFuture = CommentServices.getComments();

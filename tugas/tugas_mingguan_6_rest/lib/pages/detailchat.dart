@@ -1,6 +1,6 @@
 import 'package:easy_scaffold/easy_scaffold.dart';
 import 'package:flutter/material.dart';
-import 'package:pengayaan_7_rest/model/comment_mode.dart';
+import 'package:pengayaan_7_rest/model/comment_model.dart';
 
 import '../services/comment_services.dart';
 
