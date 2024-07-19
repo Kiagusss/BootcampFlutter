@@ -7,7 +7,7 @@ import '../../../services/user_repository.dart';
 
 part 'user_event.dart';
 part 'user_state.dart';
-
+ 
 class UserBloc extends Bloc<UserEvent, UserState> {
    final UserRepository _userRepository;
   UserBloc(this._userRepository) : super(UserLoadingState()) {
