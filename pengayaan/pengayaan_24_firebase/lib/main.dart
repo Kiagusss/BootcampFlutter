@@ -2,9 +2,12 @@ import 'package:firebase_core/firebase_core.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pengayaan_24_firebase/firebase_option.dart';
 
-import 'bloc/bloc/auth_bloc.dart';
+import 'package:pengayaan_24_firebase/bloc/users_bloc/users_bloc.dart';
+import 'package:pengayaan_24_firebase/firebase_option.dart';
+import 'package:pengayaan_24_firebase/ui/main_pages/firestore_page.dart';
+
+import 'bloc/auth_bloc/auth_bloc.dart';
 import 'ui/auth_pages/sing_in.dart';
 
 void main() async {
@@ -26,11 +29,14 @@ class MyApp extends StatelessWidget {
           BlocProvider(
             create: (context) => AuthBloc(),
           ),
+          BlocProvider(
+            create: (context) => UserBloc(),
+          ),
         ],
         child: MaterialApp(
           title: 'Super Bootcamp2',
           theme: ThemeData(useMaterial3: true),
-          home: const SignInPages(),
+          home: const FirestorePage(),
         ));
   }
 }
